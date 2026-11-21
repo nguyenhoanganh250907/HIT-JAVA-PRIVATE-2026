@@ -23,7 +23,7 @@ public class ProductServiceImpl implements ProductService{
     @Override
     public void printProducts() {
         for(int i = 0;i < PSI.size();i++){
-            System.out.printf("%d | " + PSI.get(i).toString(),i + 1);
+            System.out.println(i + 1 + " | " + PSI.get(i));
         }
     }
 
