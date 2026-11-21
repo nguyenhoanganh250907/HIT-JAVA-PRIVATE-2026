@@ -18,7 +18,7 @@ public class Cake extends Product{
 
     @Override
     public boolean isExpensive() {
-        if(getPrice() > 200000) return true;
+        if(getPrice() > 100000) return true;
         return false;
     }
 }

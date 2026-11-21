@@ -33,7 +33,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return id + " | " + name + " | " + phone;
+        return "ID: " + id + " | Tên khách hàng: " + name + " | Số điện thoại: " + phone ;
     }
 
 }

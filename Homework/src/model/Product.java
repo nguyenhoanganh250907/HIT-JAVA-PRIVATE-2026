@@ -1,6 +1,6 @@
 package model;
 
-public class Product {
+public abstract class Product {
     private String id;
     private String name;
     private double price;
@@ -61,11 +61,8 @@ public class Product {
 
     @Override
     public String toString() {
-        return id + " | " + name + " | " + price + " | " + " Tồn: " + stock;
+        return "ID" + id + " | Sản phẩm: " + name + " | Giá: " + price + " | Tồn kho: " + stock;
     }
 
-    public boolean isExpensive(){
-        if(price > 10000) return true;
-        return false;
-    }
+    public abstract boolean isExpensive();
 }
